@@ -1,0 +1,686 @@
+<!doctype html>
+<!--
+  Coded with love by Angela Li.
+  http://angela.li
+
+
+  P.S. Shirley is the cutest EVER ^__^
+-->
+<html>
+    <head>
+      <title>Happy Birthday, Shirley!</title>
+      <link rel="stylesheet" type="text/css" href="lib/animate.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <script type="text/javascript" src="lib/jquery.js"></script>
+      <script type="text/javascript" src="lib/tweenmax.js"></script>
+      <script type="text/javascript" src="lib/superscrollorama.js"></script>
+      <script type="text/javascript" src="js/script.js"></script>
+    </head>
+    <body>
+      <audio loop id="counting-stars">
+        <source src="audio/counting-stars.mp3" type="audio/mpeg">
+        <source src="audio/counting-stars.mp3" type="audio/ogg">
+        <embed height="0" width="0" src="audio/counting-stars.mp3">
+      </audio>
+      <div id="intro">
+        <h1 class="animated bounceInDown">Happy 21st Birthday, Shirley!</h1>
+
+        <div id="intro-scroll" class="animated fadeIn">
+          <div id="intro-scroll-text">scroll down!</div>
+          <div id="intro-scroll-icon">
+            &#xf063;
+          </div>
+        </div>
+      </div>
+
+      <div class="intro2-line" id="intro2-line1"><h2>We talked to a few of your friends ...</h2></div>
+      <div class="intro2-line" id="intro2-line2"><h2>And asked them some questions ...</h2></div>
+      <div class="intro2-line" id="intro2-line3"><h2>Here's what they said :)</h2></div>
+
+      <div id="friend-quotes-headline">
+        <div class="headline-experience">
+          What's your favorite experience with Shirley?
+        </div>
+        <div class="headline-admire">
+          What are things you admire about Shirley?
+        </div>
+      </div>
+
+      <div id="friend-quotes">
+        <ul>
+          <li class="friend" id="friend1">
+            <div class="friend-experience">
+              My favorite experience was spending the hackathon sitting together, stressing out over the amount of work we had to do, but still managing to pull through and kick our project's asses.
+            </div>
+            <div class="friend-id">
+              <div class="friend-photo">
+                <img src="img/alex-bukhta.jpg" />
+              </div>
+              <div class="friend-name">
+                Alex
+              </div>
+            </div>
+            <div class="friend-admire">
+              The thing I admire most is how dedicated and hard working Shirley is. Everyone works hard at Harvard, but Shirley really takes that to a new level. And the best part is, she can still smile and be happy. While many of us use the amount of work we have as an excuse to be self centered, she never fails to be loving, caring, or thoughtful, and I admire that to no end.
+            </div>
+          </li>
+          <li class="friend" id="friend2">
+            <div class="friend-experience">
+              Shopping for perfume in the malls of Beijing two summer ago.
+            </div>
+            <div class="friend-id">
+              <div class="friend-photo">
+                <img src="img/evan-wu.jpg" />
+              </div>
+              <div class="friend-name">
+                Evan
+              </div>
+            </div>
+            <div class="friend-admire">
+              She's always so bubbly and gives great hugs.
+            </div>
+          </li>
+          <li class="friend" id="friend3">
+            <div class="friend-experience">
+              My favorite experience is from freshman year. It was my first time hanging out with Shirley and her friends in Thayer, and she was super welcoming. I loved pregaming with her and then traveling from party to party, always dancing and laughing :). She's the best!
+            </div>
+            <div class="friend-id">
+              <div class="friend-photo">
+                <img src="img/josie-volovetz.jpg" />
+              </div>
+              <div class="friend-name">
+                Josie
+              </div>
+            </div>
+            <div class="friend-admire">
+              Shirley's dancing skills are hot!
+
+              <br/><br/>I admire how kind Shirley is; she always greets me with a huge smile on her face.
+
+              <br/><br/>Shirley is a boss at life. :)
+            </div>
+          </li>
+          <li class="friend" id="friend4">
+            <div class="friend-experience">
+              Watching her bring to life a beautiful creature of grace during her signature peacock dance at the annual Chinese New Year Festival celebration show at the Philip Arts Center in Gainesville, FL. (Yes---years ago). Best part of the show, every time.
+            </div>
+            <div class="friend-id">
+              <div class="friend-photo">
+                <img src="img/kevin-fan.jpg" />
+              </div>
+              <div class="friend-name">
+                Kevin Fan
+              </div>
+            </div>
+            <div class="friend-admire">
+              What admiration deserving trait doesn't she have? She's smart, friendly, nice, genuine, down-to-earth, pretty, a great dancer :) Let's be real: Shirley is pretty much the best :)
+            </div>
+          </li>
+          <li class="friend" id="friend5">
+            <div class="friend-experience">
+              One of the first times I met Shirley, we were psetting late one night in Eliot dhall, and somehow there was a pencil stuck in the ceiling.  I was trying really hard to get the pencil out of the ceiling by throwing a frisbee at it.  Shirley thought this was funny, so I knew she was a cool person.
+            </div>
+            <div class="friend-id">
+              <div class="friend-photo">
+                <img src="img/nick-moore.jpg" />
+              </div>
+              <div class="friend-name">
+                Nick
+              </div>
+            </div>
+            <div class="friend-admire">
+              Has real conversations instead of just making small talk.
+            </div>
+          </li>
+          <li class="friend" id="friend6">
+            <div class="friend-experience">
+              Shirley is smart, pretty, and nice :) She's so motherly and nice at 3:00am in the morning.
+            </div>
+            <div class="friend-id">
+              <div class="friend-photo">
+                <img src="img/grace-qi.jpg" />
+              </div>
+              <div class="friend-name">
+                Grace
+              </div>
+            </div>
+            <div class="friend-admire">
+              The fact that she's so cheerful regardless of the situation.
+            </div>
+          </li>
+          <li class="friend" id="friend7">
+            <div class="friend-experience">
+              I will never forget the time that Shirley came to my junior sale and bought out the store. But hey, she looked super good in everything she tried on, so why the fuck not?
+            </div>
+            <div class="friend-id">
+              <div class="friend-photo">
+                <img src="img/deborah-ghim.jpg" />
+              </div>
+              <div class="friend-name">
+                Deborah
+              </div>
+            </div>
+            <div class="friend-admire">
+              Shirley exudes a sense of confidence and grace in a way that always impresses me. The best part, of course, is that she's always really nice and kind to people on top of it all!
+            </div>
+          </li>
+          <li class="friend" id="friend8">
+            <div class="friend-experience">
+              This might sound realllly lame, but I really enjoyed the times I bumped into her on my way to and fro from Eliot during Junior year. The first semester was a time when I felt really shitty like.. all the time, but her smiles always cheered me up whenever I bumped into her.
+            </div>
+            <div class="friend-id">
+              <div class="friend-photo">
+                <img src="img/david-shin.jpg" />
+              </div>
+              <div class="friend-name">
+                David Shin
+              </div>
+            </div>
+            <div class="friend-admire">
+              Great leadership ability, really sweet and caring, really athletic
+            </div>
+          </li>
+          <li class="friend" id="friend9">
+            <div class="friend-experience">
+              When we first met she was like "you're the piano guy, right?" and then we talked for a long time about life and values and stuff. Then we worked on Stat 110 psets every week :)
+            </div>
+            <div class="friend-id">
+              <div class="friend-photo">
+                <img src="img/carl-gao.jpg" />
+              </div>
+              <div class="friend-name">
+                Carl
+              </div>
+            </div>
+            <div class="friend-admire">
+              She's a really sweet person :)
+            </div>
+          </li>
+          <li class="friend" id="friend10">
+            <div class="friend-experience">
+              My favorite experience with Shirley: when Shirley was about two years old and I came home from work; she run into me, sit on my lap and we went through brain quest questions together.
+            </div>
+            <div class="friend-id">
+              <div class="friend-photo">
+                <img src="img/dad.jpg" />
+              </div>
+              <div class="friend-name">
+                Shirley's dad
+              </div>
+            </div>
+            <div class="friend-admire">
+              I most admire Shirley's strength and courage to persist against adversity.
+            </div>
+          </li>
+          <li class="friend" id="friend11">
+            <div class="friend-experience">
+              Shirley, you're a total sweetheart. I've loved getting to know you through ballroom. You're always really helpful in the nicest way possible, not to mention that you absolutely KILL IT on the dance floor :)
+            </div>
+            <div class="friend-id">
+              <div class="friend-photo">
+                <img src="img/liz-zawidzka.jpg" />
+              </div>
+              <div class="friend-name">
+                Liz
+              </div>
+            </div>
+            <div class="friend-admire">
+              How nice you are to everyone around you (don't think i've ever seen you be mean to anyone...), and what an amazing dancer you are. Definitely not alone in saying that I endlessly adore watching you and Kevin at run throughs and comps..
+            </div>
+          </li>
+          <li class="friend" id="friend12">
+            <div class="friend-experience">
+              Some of my favorite experiences with Shirley include: massages, petting zoos, black friday shopping, clubbing in beijing, eating zhou (and other sketchy chinese food), talking, and late-night psetting!
+            </div>
+            <div class="friend-id">
+              <div class="friend-photo">
+                <img src="img/linda-du.jpg" />
+              </div>
+              <div class="friend-name">
+                Linda
+              </div>
+            </div>
+            <div class="friend-admire">
+              I love that she's so positive and caring and smart and fun and adorable and generous and sincere.
+            </div>
+          </li>
+          <li class="friend" id="friend13">
+            <div class="friend-experience">
+              Countless nights trying to get ruby on rails to work for our cs50 project.
+            </div>
+            <div class="friend-id">
+              <div class="friend-photo">
+                <img src="img/basil-siddiqui.jpg" />
+              </div>
+              <div class="friend-name">
+                Basil
+              </div>
+            </div>
+            <div class="friend-admire">
+              She's a phenomenal dancer and is always smiling
+            </div>
+          </li>
+          <li class="friend" id="friend14">
+            <div class="friend-experience">
+              Winning MIT this past year together was a really great way to conclude my collegiate dancing experience. =] We really had fun while dancing, and while we were thinking about technique, it was a comp where I really felt that we were finally dancing together...and that was really great for me. We have come a LONG way in our friendship and partnership, and it is really great to look back on those happy memories. I love dancing with you, I'm going to be terribly sad to see you leave Boston next year. I don't know if I'll ever be able to replace you! Have a happy 21st birthday. ^^
+            </div>
+            <div class="friend-id">
+              <div class="friend-photo">
+                <img src="img/kevin-liu-huang.jpg" />
+              </div>
+              <div class="friend-name">
+                Kevin Liu Huang
+              </div>
+            </div>
+            <div class="friend-admire">
+              Her goofiness. Her sincerity when she's late for practice. Her 8am sleepy face in the mezzanine. How sorry she is when she hits me in the face while dancing. =P
+            </div>
+          </li>
+          <li class="friend" id="friend15">
+            <div class="friend-experience">
+              All moments spent with Shirley are special to me, BUT, if I had to point out one specific one, it'd be when we were in Europe and lost eachother on a train. Most nerve wracking experience of my life, but we met the smartest, nicest, sexiest man and got to sit in First Class at no charge.
+            </div>
+            <div class="friend-id">
+              <div class="friend-photo">
+                <img src="img/jayeon-choi.jpg" />
+              </div>
+              <div class="friend-name">
+                Jayeon
+              </div>
+            </div>
+            <div class="friend-admire">
+              Her spazz moments, her nurturing side, her love for food (you'll never starve on her watch), her wisdom of 100 grandmas, her warmth, her boobs (give me some), her award-winning, sexy dance moves, her sexy maxim cover-eligible body, her profile pictures with David, THAT SMILE, her inability to empty her suitcase before her next trip, her heart, her heart, her heart, her derpiness, her hugs, her lack of understanding personal space (<a href="https://scontent-a-dfw.xx.fbcdn.net/hphotos-ash3/s720x720/548349_10200098821967867_379348693_n.jpg">example</a>)
+
+            </div>
+          </li>
+          <li class="friend" id="friend16">
+            <div class="friend-experience">
+              I have grown up with Shirley, and I cherish all of my time with her. I know that I would not be the person I am today without her. In middle school, we finished each other's sentences, and we talked on the phone every night even though we only lived 2 minutes away from each other; we would have dropped everything for each other. I fully believe that she is the best friend anyone could ask for, and I am so lucky to be call her my best friend. There are too many unforgettable moments that I could name. She is the first person that I would go to with any of my life's joys, problems, heartbreaks, and I know she would give me her full attention in return. We may be hundreds of miles apart and things may have changed with time, but I know I can always count on her.
+            </div>
+            <div class="friend-id">
+              <div class="friend-photo">
+                <img src="img/kimberly-fang.jpg" />
+              </div>
+              <div class="friend-name">
+                Kimberly
+              </div>
+            </div>
+            <div class="friend-admire">
+              I admire her optimism! I also admire her child-like attitude towards life. =P I admire her passion for the things that she cares about. I admire her open-mindedness.
+            </div>
+          </li>
+          <li class="friend" id="friend17">
+            <div class="friend-experience">
+              My first memory of Shirley was freshman year when I wanted to do Expressions Company Piece. She immediately offered to help teach me the choreography. Since then I got to know her really well through ballroom and I have tons of memories of us sitting (sometimes late in Lamont 'studying') watching ballroom videos and looking for latin dresses online. I have always found it really easy to talk to her and feel like I can tell her anything. Her dancing also inspired me a lot freshman year and definitely contributed to my passion for dance.
+            </div>
+            <div class="friend-id">
+              <div class="friend-photo">
+                <img src="img/lotus-cannon.jpg" />
+              </div>
+              <div class="friend-name">
+                Lotus
+              </div>
+            </div>
+            <div class="friend-admire">
+              Shirley's always willing to listen and help people. And she's just lovable <3
+            </div>
+          </li>
+          <li class="friend" id="friend18">
+            <div class="friend-experience">
+              My favorite experience with Shirley is taking Chinese 130x together. We worked together on all of our projects, and it was always super fun. That year, I learned so much about her and she became one of my best friends.
+            </div>
+            <div class="friend-id">
+              <div class="friend-photo">
+                <img src="img/larry-wang.jpg" />
+              </div>
+              <div class="friend-name">
+                Larry
+              </div>
+            </div>
+            <div class="friend-admire">
+              She's smart, she's cool, she's genuine, and she's kind. Shirley's the type of person who can have a conversation with anyone and make friends immediately. She truly cares about her friends and she has the best smile.
+            </div>
+          </li>
+          <li class="friend" id="friend19">
+            <div class="friend-experience">
+              When we slept together!
+            </div>
+            <div class="friend-id">
+              <div class="friend-photo">
+                <img src="img/violet-li.jpg" />
+              </div>
+              <div class="friend-name">
+                Violet
+              </div>
+            </div>
+            <div class="friend-admire">
+              She's so true to herself, and she makes me be more introspective about how I want to live my life. She's also always so happy and makes everyone who meets her feel like they're incredibly special to her.
+            </div>
+          </li>
+          <li class="friend" id="friend20">
+            <div class="friend-experience">
+              Honestly, some of my best times with Shirley have simply been hanging out in our room, whether watching movies or just sitting and talking.  No matter how busy and stressed I feel, she always manages to cheer me up!
+            </div>
+            <div class="friend-id">
+              <div class="friend-photo">
+                <img src="img/naomi-genuth.jpg" />
+              </div>
+              <div class="friend-name">
+                Naomi Genuth
+              </div>
+            </div>
+            <div class="friend-admire">
+              She is so sweet and kind and caring--I didn't even know anyone could be that nice!  She's smart, friendly, talented, unbelievable graceful, and honestly the perfect roommate :)
+            </div>
+          </li>
+          <li class="friend" id="friend21">
+            <div class="friend-experience">
+              Not sure if this is exactly the "favorite", but definitely the most memorable. I remember the day we sent Shirley to the airport the first time she had to leave for college. She had already gone through security but this was a small airport so I ran up to the edge of the waiting room where we were separated by a pane of glass. Even though we could see each other, sound didn't travel through the glass so we ended up using our phones to communicate. Perhaps we should have felt silly, talking over phones while we were 1 foot away from each other, only to exchange a few terse phrases about the weather and why Eastside was superior to Buchholz. But that conversation meant everything to me. I treasured every word because it was the first time i realized how true the old cheesy "You don't know how much someone means to you until you lose them" saying was. Even though i had known for years that she was going to leave, when the day came i desperately clung to every last second i had with her. I tried not to show it, but i really was going to miss her, even if she was to come back in only half a year. It was only in that moment that I thought back to all the things she did for me when I was younger, like how she always saved chocolate from the parties she went to for me to eat at home, and when she won a stuffed tiger for me at Las vegas. Many small, seemingly inconsequential memories like these surfaced and I truly appreciated them for the first time. Of course, i wasn't going to stop her from leaving or anything, but it really made me realize how much my sister cares for me and how much i care for her. Because of this, I now treasure the remaining moments we spend together when she visits.
+            </div>
+            <div class="friend-id">
+              <div class="friend-photo">
+                <img src="img/jason-ai.jpg" />
+              </div>
+              <div class="friend-name">
+                Jason
+              </div>
+            </div>
+            <div class="friend-admire">
+              Shirley is very down to earth despite all of her achievements. Her positive energy and smile always brightens up my day. She is very caring and the best sister anyone could ask for
+            </div>
+          </li>
+          <li class="friend" id="friend22">
+            <div class="friend-experience">
+              I didn't believe the boys that we had gotten into Eliot, but I trusted Shirley when she told me we did!
+              <br/>Talking in our common room/ her bedroom.
+              <br/>My sleep talking when she would walk through my room.
+              <br/>Her beautiful ballroom dresses and good taste in clothes in general.
+            </div>
+            <div class="friend-id">
+              <div class="friend-photo">
+                <img src="img/jen-rolfes.jpg" />
+              </div>
+              <div class="friend-name">
+                Jen
+              </div>
+            </div>
+            <div class="friend-admire">
+              Shirley is always super bubbly, optimistic.
+            </div>
+          </li>
+          <li class="friend" id="friend23">
+            <div class="friend-experience">
+              Shirley is the sweetest :) It was really fun being on CompCom with her and going to LA for Nationals! She is super nice and supportive and also really good at putting rhinestones in hair!
+            </div>
+            <div class="friend-id">
+              <div class="friend-photo">
+                <img src="img/julia-liu.jpg" />
+              </div>
+              <div class="friend-name">
+                Julia
+              </div>
+            </div>
+            <div class="friend-admire">
+              Shirley always believes the best in others and is a great friend. Her hard work and dedication are really inspiring!
+            </div>
+          </li>
+          <li class="friend" id="friend24">
+            <div class="friend-experience">
+              Back when we practiced ballroom together, it was always so enjoyable to practice with her, and she was a huge part of why ballroom was so fun for me!
+            </div>
+            <div class="friend-id">
+              <div class="friend-photo">
+                <img src="img/justin-to.jpg" />
+              </div>
+              <div class="friend-name">
+                Justin To
+              </div>
+            </div>
+            <div class="friend-admire">
+              She's always so positive and upbeat!
+            </div>
+          </li>
+          <li class="friend" id="friend25">
+            <div class="friend-experience">
+              Beijing was such a wonderful experience. Wouldn't have been so great if I didn't have Shirley to hang out with and talk to.
+            </div>
+            <div class="friend-id">
+              <div class="friend-photo">
+                <img src="img/justin-lo.jpg" />
+              </div>
+              <div class="friend-name">
+                Justin Lo
+              </div>
+            </div>
+            <div class="friend-admire">
+              Good friend, compassionate and understanding. Super smart too! Also pretty spontaneous and never boring!
+            </div>
+          </li>
+          <li class="friend" id="friend26">
+            <div class="friend-experience">
+              My favorite experiences with Shirley are just all the little things she's ever done to cheer me up! Whether it's getting bubble tea, watching 90's music videos on Youtube, eating lots (LOTS) of Taza chocolate, or nomming on Felipe's nachos (why are all of my memories of us eating food ...), hanging out with Shirley always makes me happy. :)
+            </div>
+            <div class="friend-id">
+              <div class="friend-photo">
+                <img src="img/angela-li.jpg" />
+              </div>
+              <div class="friend-name">
+                Angela
+              </div>
+            </div>
+            <div class="friend-admire">
+              I really admire how thoughtful and sweet Shirley is to everybody all the time (even when she's stressed or under a lot of pressure herself)! She's always willing to take time out of her day to have a real conversation. She's also incredibly smart (I wouldn't have made it through Stat 110 without her!) and motivated and SUCH A SEXY DANCER. WOW. *__*
+            </div>
+          </li>
+          <li class="friend" id="friend27">
+            <div class="friend-experience">
+              One of my many favorite experiences with Shirley was our New Hampshire trip, marking our first anniversary.  During our time in Franconia, we stayed at Hillwinds Lodge, located near a pleasant river and a breathtaking view of plains and woody forests.  We had our anniversary meal at Sugar Hills Inn, a small country inn that served some of the best sausage-stuffed quail and mussel bisque.  We took the tram, explored Mt. Cannon, and went caving at the Lost River.  We even went to Funspot, a 3-story arcade playhouse!  But after the whole trip, I began to realize that I love Shirley not just because we share so many common interests but because no matter how i'm feeling, she can always make me smile and realize the good in life.  =)
+            </div>
+            <div class="friend-id">
+              <div class="friend-photo">
+                <img src="img/david-su.jpg" />
+              </div>
+              <div class="friend-name">
+                David
+              </div>
+            </div>
+            <div class="friend-admire">
+              I first knew Shirley as a passionate, awe-inspiring dance partner.  But over the years, I've learned that Shirley cares about absolutely everything.  Despite having incredibly high-achieving ambitions, she never forgets her friends and family.  I admire her work ethic, but even more, I admire her willingness to lead through acts of kindness.  As enthusiastic and expressive as Shirley is, I admire her most for being able to bring out the best in people.  Over the last two years, she's really showed me how I can become a better person.  =]
+            </div>
+          </li>
+          <li class="friend" id="friend28">
+            <div class="friend-experience">
+              does going to class count? or actually, not going to class...also, all the times we stayed up super late and acted weird in the dhall &gt;.&lt; but shirley always helped me, like on extreme optimization. sadly i feel like many of our experiences together are academic T_T
+            </div>
+            <div class="friend-id">
+              <div class="friend-photo">
+                <img src="img/victoria-shih.jpg" />
+              </div>
+              <div class="friend-name">
+                Victoria
+              </div>
+            </div>
+            <div class="friend-admire">
+              I don't even know what I don't admire about Shirley, one time I tried to think of something and I couldn't think of anything -___-
+
+              <br/><br/>But I will try to come up with specifics: Shirley always does her best to help people even when she's super busy, and she can always help people because she is SO SMART. And knows when to have fun and when to work hard...and is multitalented as an amazing dancer and encouraging + fun person. Basically I want to be Shirley.
+            </div>
+          </li>
+          <li class="friend" id="friend29">
+            <div class="friend-experience">
+              Sitting on the bed in One Western, and then proceeding to flailing and spazzing over awesomeness like Christina Aguilera and whatnots. She drank the awesome juice long before she had pomegranate aloe juice, so she just has awesomeness coming from her PORES.
+            </div>
+            <div class="friend-id">
+              <div class="friend-photo">
+                <img src="img/donna-cheung.jpg" />
+              </div>
+              <div class="friend-name">
+                Donna
+              </div>
+            </div>
+            <div class="friend-admire">
+              Her air of happiness!
+              <br/><br/>
+              Her compassion!
+              <br/><br/>
+              Her cute deviousness.
+              <br/><br/>
+              Her intelligence!
+              <br/><br/>
+              Her bravery :)
+            </div>
+          </li>
+          <li class="friend" id="friend30">
+            <div class="friend-experience">
+              Eating at Noch's
+            </div>
+            <div class="friend-id">
+              <div class="friend-photo">
+                <img src="img/patrick-hsu.jpg" />
+              </div>
+              <div class="friend-name">
+                Patrick
+              </div>
+            </div>
+            <div class="friend-admire">
+              Caring, sharing, loyal
+            </div>
+          </li>
+          <li class="friend" id="friend31">
+            <div class="friend-experience">
+              She has these amazing stories that always end up with someone mutilated or dead (or both). And she has them for every occasion too! Someone should really make a book of them...
+            </div>
+            <div class="friend-id">
+              <div class="friend-photo">
+                <img src="img/marilyn-wang.jpg" />
+              </div>
+              <div class="friend-name">
+                Marilyn
+              </div>
+            </div>
+            <div class="friend-admire">
+              How she doesn't let life beat her down and keeps trying no matter what happens. And she's wicked smart!!
+            </div>
+          </li>
+          <li class="friend" id="friend32">
+            <div class="friend-experience">
+              When we comped the Crimson together, and they made us go to Shaws to buy groceries lol. it was like 4 assists though and it was fun to go together! :)
+            </div>
+            <div class="friend-id">
+              <div class="friend-photo">
+                <img src="img/tracy-lu.jpg" />
+              </div>
+              <div class="friend-name">
+                Tracy
+              </div>
+            </div>
+            <div class="friend-admire">
+              She's sweet, talented, and very capable.
+            </div>
+          </li>
+          <li class="friend" id="friend33">
+            <div class="friend-experience">
+              When she helped teach me salsa back in freshman year :)
+            </div>
+            <div class="friend-id">
+              <div class="friend-photo">
+                <img src="img/vladimir-bok.jpg" />
+              </div>
+              <div class="friend-name">
+                Vlad
+              </div>
+            </div>
+            <div class="friend-admire">
+              Unwavering determination to always give her best
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="clear"></div>
+
+      <div class="intro2-line" id="intro2-line4"><h2>We also asked them, "If you could describe Shirley in one word ..."</h2></div>
+
+      <div class="intro2-line" id="intro2-line5"><h2>"What would it be?"</h2></div>
+
+      <div id="one-word">
+        <ul>
+          <li class="word" id="word1">
+            <span class="quote-mark">&ldquo;</span>uplifting<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word2">
+            <span class="quote-mark">&ldquo;</span>XD<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word3">
+            <span class="quote-mark">&ldquo;</span>sweetheart<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word4">
+            <span class="quote-mark">&ldquo;</span>wow<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word5">
+            <span class="quote-mark">&ldquo;</span>sincere!<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word6">
+            <span class="quote-mark">&ldquo;</span>cheerful :)<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word7">
+            <span class="quote-mark">&ldquo;</span>confident<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word8">
+            <span class="quote-mark">&ldquo;</span>mom<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word9">
+            <span class="quote-mark">&ldquo;</span>genuine<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word10">
+            <span class="quote-mark">&ldquo;</span>loving<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word11">
+            <span class="quote-mark">&ldquo;</span>sweetheart<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word12">
+            <span class="quote-mark">&ldquo;</span>twin<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word13">
+            <span class="quote-mark">&ldquo;</span>happy<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word14">
+            <span class="quote-mark">&ldquo;</span>trusting<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word15">
+            <span class="quote-mark">&ldquo;</span>derp<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word16">
+            <span class="quote-mark">&ldquo;</span>unpunctual :p<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word17">
+            <span class="quote-mark">&ldquo;</span>cute<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word18">
+            <span class="quote-mark">&ldquo;</span>惊人!<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word19">
+            <span class="quote-mark">&ldquo;</span>kitty!<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word20">
+            <span class="quote-mark">&ldquo;</span>kindhearted :)<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word21">
+            <span class="quote-mark">&ldquo;</span>effervescent<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word22">
+            <span class="quote-mark">&ldquo;</span>light-hearted<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word23">
+            <span class="quote-mark">&ldquo;</span>bubbly<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word24">
+            <span class="quote-mark">&ldquo;</span>bubbly<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word25">
+            <span class="quote-mark">&ldquo;</span>awesome<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word26">
+            <span class="quote-mark">&ldquo;</span>bouncy<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word27">
+            <span class="quote-mark">&ldquo;</span>loveable<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word28">
+            <span class="quote-mark">&ldquo;</span>perffff!<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word29">
+            <span class="quote-mark">&ldquo;</span>bamf<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word30">
+            <span class="quote-mark">&ldquo;</span>ai ya!!<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word31">
+            <span class="quote-mark">&ldquo;</span>shirrRRLLEYY<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word32">
+            <span class="quote-mark">&ldquo;</span>pretty<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word33">
+            <span class="quote-mark">&ldquo;</span>energetic<span class="quote-mark">&rdquo;</span></li>
+        </ul>
+      </div>
+
+      <div class="end-line" id="end-line1">
+        <h2>We love you, Shirley!</h2>
+        <p>Have an amazing 21st!</p>
+
+        <div class="signature">
+          <p><span class="heart">,</span><br/>your friends and family</p>
+        </div>
+      </div>
+    </body>
+</html>

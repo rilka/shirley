@@ -1,0 +1,294 @@
+// Variables + mixins + etc.
+
+shirley-blue = #4ECDC4
+dark-blue = #556270
+
+lime-green = #C7F464
+orange = #F38630
+
+light-pink = #FF6B6B
+dark-pink = #C44D58
+
+border-box()
+  box-sizing: border-box
+  -moz-box-sizing: border-box
+
+border-radius(radius)
+  -webkit-border-radius: radius;
+  -moz-border-radius: radius;
+  border-radius: radius;
+
+animate-loop(n=infinite)
+  animation-iteration-count: n
+  -webkit-animation-iteration-count: n
+
+animate-delay(delay)
+  animation-delay: delay;
+  -webkit-animation-delay: delay;
+
+// Imports
+
+@import url("http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900");
+@import url("http://fonts.googleapis.com/css?family=Cookie");
+
+@font-face
+  font-family: "Font Awesome"
+  src: url("../fonts/fontawesome-webfont.eot?v=4.0.1")
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.0.1") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=4.0.1") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.0.1") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.0.1#fontawesomeregular") format("svg")
+
+// Reset
+
+html, body
+  min-height: 100%
+  height: 100%
+  margin: 0
+  padding: 0
+
+html
+  -webkit-font-smoothing: antialiased
+
+// Basic
+
+body
+  background: shirley-blue
+  font-family: "Raleway"
+
+::selection
+  color: #FFF
+  background: darken(shirley-blue, 50%)
+
+.clear
+  clear: both
+  margin: 100px
+
+  &::before
+    content: " "
+
+// Intro section
+
+#intro
+  height: 100%
+  color: #FFF
+
+  h1
+    padding-top: 120px
+    font-family: "Cookie"
+    font-size: 136px
+    text-align: center
+    text-shadow: 4px 4px 0px darken(shirley-blue, 30%)
+
+#intro-scroll
+  position: relative
+  text-align: center
+  animate-delay(1.5s)
+
+  #intro-scroll-text
+    font-size: 24px
+    font-weight: 400
+    text-shadow: 2px 2px 0px darken(shirley-blue, 30%)
+
+  #intro-scroll-icon
+    position: relative
+    top: 0
+    margin-top: 20px
+    font-family: "Font Awesome"
+    font-size: 48px
+    text-shadow: 2px 2px 0px darken(shirley-blue, 30%)
+    border-box()
+
+    animation: arrow-bounce 1s;
+    -webkit-animation: arrow-bounce 1s;
+    animate-loop()
+
+// Second intro section (I'm good at naming things)
+
+.intro2-line
+  height: 100%
+
+.intro2-line h2
+  color: #FFF
+  font-family: "Cookie"
+  font-size: 96px
+  font-weight: normal
+  text-align: center
+  text-shadow: 4px 4px 0px darken(shirley-blue, 30%)
+
+#intro2-line4
+  padding: 80px
+  margin-top: 30%
+
+// Friend quotes section
+
+#friend-quotes
+  ul
+    margin: 0
+    padding: 0
+    list-style: none
+
+#friend-quotes-headline
+  margin: 0 auto
+  width: 960px
+
+  color: #FFF
+  font-family: "Cookie"
+  font-size: 48px
+  text-shadow: 2px 2px 0px darken(shirley-blue, 30%)
+
+  .headline-experience
+    width: 400px
+    float: left
+
+  .headline-admire
+    width: 400px
+    float: right
+    text-align: right
+
+.friend
+  clear: both
+  width: 960px
+  margin: 0 auto
+  padding: 80px 0 0
+  opacity: 0.2
+
+  .friend-experience, .friend-admire
+    font-size: 12.5px
+    line-height: 2em
+    font-weight: 500
+    color: #333
+
+    width: 340px
+    padding: 20px
+
+  .friend-experience
+    margin-right: 20px
+    float: left
+    background: lime-green
+    box-shadow: 3px 3px 0px darken(lime-green, 50%)
+
+  .friend-id
+    float: left
+    padding: 0px 30px
+
+    img
+      width: 100px
+      height: 100px
+      border-radius(50px)
+      border: 2px solid #FFF
+      border-box()
+
+    .friend-name
+      margin-top: 12px
+      background: light-pink
+      box-shadow: 3px 3px 0px darken(light-pink, 50%)
+      padding: 6px
+      width: 88px
+
+      font-size: 12px
+      text-transform: uppercase;
+      font-weight: 800
+      color: #FFF
+      text-align: center
+
+  .friend-admire
+    margin-left: 20px
+    float: right
+    text-align: right
+    background: orange
+    box-shadow: 3px 3px 0px darken(orange, 50%)
+
+// Word section
+
+#one-word
+  min-height: 100%
+
+#one-word ul
+  max-width: 800px
+  margin: 0 auto
+  padding: 0
+  text-align: center
+  list-style: none
+
+#one-word ul li
+  display: inline-block
+  background: dark-pink
+  box-shadow: 2px 2px 0px 0px darken(dark-pink, 30%)
+  color: #FFF
+  margin: 40px
+
+  height: 160px
+  width: 160px
+  line-height: 160px
+  border-radius(100px)
+  border-box()
+
+  font-size: 20px
+  font-weight: 300
+  text-align: center
+
+  opacity: 0.5
+
+#one-word ul li:nth-child(2n)
+  background: light-pink
+  box-shadow: 2px 2px 0px 0px darken(light-pink, 30%)
+
+.quote-mark
+  display: none
+  font-family: "Georgia"
+  font-size: 20px
+
+// The end
+
+.end-line
+  margin-top: 300px
+  height: 80%
+  text-align: center
+
+
+  h2
+    margin: 0
+    color: #FFF
+    font-family: "Cookie"
+    font-size: 120px
+    text-shadow: 4px 4px 0px darken(shirley-blue, 30%)
+
+  p
+    margin: 20px
+    color: #FFF
+    font-size: 48px
+    text-shadow: 2px 2px 0px darken(shirley-blue, 30%)
+
+  .signature
+    margin-top: 120px
+
+    p
+      font-size: 24px
+
+    .heart
+      font-family: "Georgia"
+      font-size: 60px
+      line-height: 120px
+
+    .heart::before
+      font-family: "Font Awesome"
+      content: "\f004"
+      font-size: 100px
+      color: dark-pink
+      text-shadow: 2px 2px 0px #FFF
+
+// Animations are the worst
+
+@keyframes arrow-bounce
+  0%
+    top: 0
+  50%
+    top: 10px
+  100%
+    top: 0
+
+@-webkit-keyframes arrow-bounce
+  0%
+    top: 0
+  50%
+    top: 10px
+  100%
+    top: 0

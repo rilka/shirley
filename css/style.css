@@ -1,0 +1,312 @@
+@import url("http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900");
+@import url("http://fonts.googleapis.com/css?family=Cookie");
+@font-face {
+  font-family: "Font Awesome";
+  src: url("../fonts/fontawesome-webfont.eot?v=4.0.1");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.0.1") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=4.0.1") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.0.1") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.0.1#fontawesomeregular") format("svg");
+}
+html,
+body {
+  min-height: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+html {
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  background: #4ecdc4;
+  font-family: "Raleway";
+}
+::selection {
+  color: #fff;
+  background: #1f6e69;
+}
+.clear {
+  clear: both;
+  margin: 100px;
+}
+.clear::before {
+  content: " ";
+}
+#intro {
+  height: 100%;
+  color: #fff;
+}
+#intro h1 {
+  padding-top: 120px;
+  font-family: "Cookie";
+  font-size: 136px;
+  text-align: center;
+  text-shadow: 4px 4px 0px #2c9a93;
+}
+#intro-scroll {
+  position: relative;
+  text-align: center;
+  animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
+}
+#intro-scroll #intro-scroll-text {
+  font-size: 24px;
+  font-weight: 400;
+  text-shadow: 2px 2px 0px #2c9a93;
+}
+#intro-scroll #intro-scroll-icon {
+  position: relative;
+  top: 0;
+  margin-top: 20px;
+  font-family: "Font Awesome";
+  font-size: 48px;
+  text-shadow: 2px 2px 0px #2c9a93;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  animation: arrow-bounce 1s;
+  -webkit-animation: arrow-bounce 1s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+.intro2-line {
+  height: 100%;
+}
+.intro2-line h2 {
+  color: #fff;
+  font-family: "Cookie";
+  font-size: 96px;
+  font-weight: normal;
+  text-align: center;
+  text-shadow: 4px 4px 0px #2c9a93;
+}
+#intro2-line4 {
+  padding: 80px;
+  margin-top: 30%;
+}
+#friend-quotes ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#friend-quotes-headline {
+  margin: 0 auto;
+  width: 960px;
+  color: #fff;
+  font-family: "Cookie";
+  font-size: 48px;
+  text-shadow: 2px 2px 0px #2c9a93;
+}
+#friend-quotes-headline .headline-experience {
+  width: 400px;
+  float: left;
+}
+#friend-quotes-headline .headline-admire {
+  width: 400px;
+  float: right;
+  text-align: right;
+}
+.friend {
+  clear: both;
+  width: 960px;
+  margin: 0 auto;
+  padding: 80px 0 0;
+  opacity: 0.2;
+}
+.friend .friend-experience,
+.friend .friend-admire {
+  font-size: 12.5px;
+  line-height: 2em;
+  font-weight: 500;
+  color: #333;
+  width: 340px;
+  padding: 20px;
+}
+.friend .friend-experience {
+  margin-right: 20px;
+  float: left;
+  background: #c7f464;
+  box-shadow: 3px 3px 0px #72a10b;
+}
+.friend .friend-id {
+  float: left;
+  padding: 0px 30px;
+}
+.friend .friend-id img {
+  width: 100px;
+  height: 100px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.friend .friend-id .friend-name {
+  margin-top: 12px;
+  background: #ff6b6b;
+  box-shadow: 3px 3px 0px #b50000;
+  padding: 6px;
+  width: 88px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #fff;
+  text-align: center;
+}
+.friend .friend-admire {
+  margin-left: 20px;
+  float: right;
+  text-align: right;
+  background: #f38630;
+  box-shadow: 3px 3px 0px #8a4108;
+}
+#one-word {
+  min-height: 100%;
+}
+#one-word ul {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  list-style: none;
+}
+#one-word ul li {
+  display: inline-block;
+  background: #c44d58;
+  box-shadow: 2px 2px 0px 0px #903038;
+  color: #fff;
+  margin: 40px;
+  height: 160px;
+  width: 160px;
+  line-height: 160px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  opacity: 0.5;
+}
+#one-word ul li:nth-child(2n) {
+  background: #ff6b6b;
+  box-shadow: 2px 2px 0px 0px #fd0000;
+}
+.quote-mark {
+  display: none;
+  font-family: "Georgia";
+  font-size: 20px;
+}
+.end-line {
+  margin-top: 300px;
+  height: 80%;
+  text-align: center;
+}
+.end-line h2 {
+  margin: 0;
+  color: #fff;
+  font-family: "Cookie";
+  font-size: 120px;
+  text-shadow: 4px 4px 0px #2c9a93;
+}
+.end-line p {
+  margin: 20px;
+  color: #fff;
+  font-size: 48px;
+  text-shadow: 2px 2px 0px #2c9a93;
+}
+.end-line .signature {
+  margin-top: 120px;
+}
+.end-line .signature p {
+  font-size: 24px;
+}
+.end-line .signature .heart {
+  font-family: "Georgia";
+  font-size: 60px;
+  line-height: 120px;
+}
+.end-line .signature .heart::before {
+  font-family: "Font Awesome";
+  content: "\f004";
+  font-size: 100px;
+  color: #c44d58;
+  text-shadow: 2px 2px 0px #fff;
+}
+@-webkit-keyframes arrow-bounce {
+  0% {
+    top: 0;
+  }
+
+  50% {
+    top: 10px;
+  }
+
+  100% {
+    top: 0;
+  }
+}
+@-moz-keyframes arrow-bounce {
+  0% {
+    top: 0;
+  }
+
+  50% {
+    top: 10px;
+  }
+
+  100% {
+    top: 0;
+  }
+}
+@-webkit-keyframes arrow-bounce {
+  0% {
+    top: 0;
+  }
+
+  50% {
+    top: 10px;
+  }
+
+  100% {
+    top: 0;
+  }
+}
+@-o-keyframes arrow-bounce {
+  0% {
+    top: 0;
+  }
+
+  50% {
+    top: 10px;
+  }
+
+  100% {
+    top: 0;
+  }
+}
+@-ms-keyframes arrow-bounce {
+  0% {
+    top: 0;
+  }
+
+  50% {
+    top: 10px;
+  }
+
+  100% {
+    top: 0;
+  }
+}
+@keyframes arrow-bounce {
+  0% {
+    top: 0;
+  }
+
+  50% {
+    top: 10px;
+  }
+
+  100% {
+    top: 0;
+  }
+}
